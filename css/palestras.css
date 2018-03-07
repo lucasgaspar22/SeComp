@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+.MyCardPalestra{
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    text-align: left;
+    background-color: rgba(255,255,255,0.7);
+    border:none;border-bottom: solid 3px #133D70 !important;
+    color: #133D70;
+    font-family: Roboto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.MyCardPalestra img{
+    width: 27%;
+    margin: 5px;
+    margin-bottom: 10px;
+    float :left;
+}
+
+.PalestraTitle{
+    font-size: 18px !important;
+    
+}
+
+
+.Info{
+    float: left;
+    margin: inherit;
+    margin-left: 5%;
+}

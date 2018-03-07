@@ -1,0 +1,21 @@
+<ion-view>
+
+    <ion-content>
+    	<img src="img/logo.png" style="width:50%; margin-left: 25%; margin-top: 10%;">
+        <div class="container-80">
+	        <div class="input-data">
+		    	<form class="my-form" ng-submit="vm.RegisterUser(user)" style="margin-bottom: 50px;">
+		    		<p>Nome:</p>
+					<input type="text" ng-model="user.name">
+			    	<p>E-mail:</p>
+					<input type="email" ng-model="user.email">
+					<p>Senha:</p>
+					<input type="password" ng-model="user.password">
+					<button class="myButton" >
+			  			Registrar
+					</button>
+				</form>
+	        </div>
+	    </div>
+    </ion-content>
+</ion-view>

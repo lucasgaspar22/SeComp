@@ -1,0 +1,23 @@
+<ion-view  view-title=" <img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+	<ion-nav-bar class="BlueBar" title = "Secomp" align-title="center">
+        <ion-nav-buttons side="left">
+            <button class="MenuBtn" ng-click="vm.ChangeState('app.tab.atracoes')"><ion-icon class="ion-chevron-left" style= "font-size: 30px;"> </ion-icon></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+            <div class="container-90">
+            	<div class="opacity">
+                    <br>
+                    <p class="detailsTitle">{{vm.Atracao.name}}</p>
+                    <img src="{{vm.Atracao.image}}" style="width: 40%;float: left; margin-left: 3%;">
+                    <br>
+                    <p class="description" style="text-align: justify;float: left; margin-bottom: 100px;"> {{vm.Atracao.description}} </p>
+                    <!-- <form class="validade-form" ng-submit="vm.ValidadeAtracao(atracao)" style="margin-bottom: 50px;">
+                        <input type="password" ng-model="atracao.password" id = "passInput">
+                        <button class="myButton validade" >Validar</button>
+                    </form> -->
+                </div>
+            </div>
+    </ion-content>
+    <div class="blueColor barDetail" style="position: fixed; bottom: 0px;height:20px;"></div>
+</ion-view>

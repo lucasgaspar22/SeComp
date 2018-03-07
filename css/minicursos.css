@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+.MyCards{width: 100%;height: auto;position: relative;float: left;text-align: left;background-color: rgba(255,255,255, 0.7);border:none;border-bottom: solid 3px #133D70 !important;color: #133D70;font-family: Roboto;padding-top: 10px;margin-bottom: 10px;}
+
+.MyCards img{width: 27%;margin: 5px;margin-bottom: 10px;float :left;}
+.MiniTitle{font-size: 18px !important;}
+.Theme{font-size: 15px;height: 24px;float: left;color: white;background-color:#F7941E;border-radius: 5px;padding: 2px;}
+.Info{float: left;margin: inherit;}
+
+
+
+
+
+
+/*.MyNewCards{
+    display: flex;
+    flex-direction: column;
+    border:none;
+    background-color: white;
+    width: 90%;
+    color:#133D70;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 12%;
+    padding-left: 20%;
+}
+
+
+.MiniImg{width: 27%; border-radius: 100px;position: absolute; margin-left: -28% !important;margin-top: -1%!important;}
+
+.MyNewCards p{ font-size: 12px; margin-bottom: 0px;margin-top:0px; }
+
+.MyNewCards .MiniTitle{font-size: 15px; margin-bottom: 0px; margin-top:0px;}*/

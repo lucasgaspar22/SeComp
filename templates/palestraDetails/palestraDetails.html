@@ -1,0 +1,27 @@
+<ion-view  view-title=" <img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+	<ion-nav-bar class="BlueBar" title = "Secomp" align-title="center">
+        <ion-nav-buttons side="left">
+            <button class="MenuBtn" ng-click="vm.ChangeState('app.tab.palestras')"><ion-icon class="ion-chevron-left" style= "font-size: 30px;"> </ion-icon></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+            <div class="container-90">
+            	<div class="opacity">
+                    <br>
+                    <p class="detailsTitle">{{vm.Palestra.name}}</p>
+                    <img src="{{vm.Palestra.image}}" style="width: 40%;float: left; margin-left: 3%;">
+                    <p class="Infov"><ion-icon class="ion-ios-calendar"> {{vm.Palestra.date}}</p>
+                    <p class="Infov"><ion-icon class="ion-ios-location"> {{vm.Palestra.local}}</p>
+                    <p class="Infov"><ion-icon class="ion-ios-clock"> {{vm.Palestra.time}}</p>
+                    <p class="Infov"><ion-icon class="ion-person"> {{vm.Palestra.palestrante}}</p>
+                    <br>
+                    <p class="description" style="text-align: justify;float: left;margin-bottom: 100px;"> {{vm.Palestra.description}} </p>
+                    <!-- <form class="validade-form" ng-submit="vm.ValidadePalestra(palestra)" style="margin-bottom: 50px;">
+                        <input type="text" ng-model="palestra.password" id = "passInput-{{vm.Palestra.$id}}">
+                        <button class="myButton validade" id = "validadeBtn-{{vm.Palestra.$id}}" >Validar</button>
+                    </form> -->
+                </div>
+            </div>
+    </ion-content>
+    <div class="blueColor barDetail" style="position: fixed; bottom: 0px;height:20px;"></div>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view  view-title=" <img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+
+    <ion-nav-bar class="BlueBar" title="Atrações"  align-title="center" >
+            <ion-nav-buttons side="left">
+                 <button  menu-toggle="left" class="MenuBtn"> <ion-icon class="ion-navicon-round" style= "font-size: 30px;"> </ion-icon></button>
+            </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content>
+             <br>
+             <div class="container-90">
+                <button class="MyCardsAtracao animated bounceInLeft" ng-repeat="atracao in vm.Atracoes" ng-click="vm.ViewAtracao('{{atracao.$id}}')">
+                    <img src="{{atracao.image}}">
+                    <p class="AtracaoTitle">{{atracao.name}}</p>
+                </button>
+                <button class = "MyCardsAtracao animated bounceInLeft" ng-click="vm.notAButton()">
+                    <img src="img/GameJam2.png">
+                    <p class="AtracaoTitle">Code, Pizza and Glory - 36 horas, um desafio.</p>
+                </button> 
+               <!--  <button class = "MyCardsAtracao animated bounceInLeft" ng-click="vm.notAButton()">
+                    <img src="img/junk_base_icon4.png">
+                    <p class="AtracaoTitle">Jukebox - Vote na sua música preferida no intervalo!</p>
+                </button>  -->
+            </div>
+    </ion-content>
+</ion-view>

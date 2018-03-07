@@ -1,0 +1,28 @@
+<ion-view  view-title="<img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+
+    <ion-nav-bar class="BlueBar" align-title="center">
+            <ion-nav-buttons side="left" title="Mini Cursos" >
+                 <button  menu-toggle="left" class="MenuBtn"> <ion-icon class="ion-navicon-round" style= "font-size: 30px;"> </ion-icon></button>
+            </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-content>
+      
+         <div class="myBackGround">
+             <br>
+             <div class="container-90">
+
+                <button class="MyCards animated bounceInLeft" ng-repeat="mini in vm.Mini" ng-click="vm.ViewMiniCurso('{{mini.$id}}')">
+                    
+                    <img class="MiniImg" src="{{mini.image}}">
+                    <p class="MiniTitle">{{mini.name}}</p>
+                    <p class="Theme">{{mini.theme}}</p>
+                    <p class="Info"><ion-icon class="ion-ios-calendar"> {{mini.date}}</p>
+                    <p class="Info"><ion-icon class="ion-ios-location"> {{mini.local}}</p>
+                    <p class="Info"><ion-icon class="ion-ios-clock"> {{mini.time}}</p>
+                    <p class="Info"><ion-icon class="ion-ios-people"> {{mini.size}}</p>
+                </button>
+             </div>
+        </div>
+    </ion-content>
+</ion-view>

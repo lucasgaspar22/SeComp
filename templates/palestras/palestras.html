@@ -1,0 +1,22 @@
+<ion-view  view-title="<img  src='img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+
+    <ion-nav-bar class="BlueBar" title="Palestras" align-title="center">
+            <ion-nav-buttons side="left">
+                 <button  menu-toggle="left" class="MenuBtn"> <ion-icon class="ion-navicon-round" style= "font-size: 30px;"> </ion-icon></button>
+            </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+         <div class="myBackGround">
+            <br>
+            <div class="container-90">
+                <button class="MyCardPalestra animated bounceInLeft" ng-repeat="palestra in vm.Palestras" ng-click="vm.ViewPalestra('{{palestra.$id}}')">
+                    <img src="{{palestra.image}}">
+                        <p class="PalestraTitle">{{palestra.name}}</p>
+                        <p class="Info"><ion-icon class="ion-ios-calendar"> {{palestra.date}}</p>
+                        <p class="Info"><ion-icon class="ion-ios-location"> {{palestra.local}}</p>
+                        <p class="Info"><ion-icon class="ion-ios-clock"> {{palestra.time}}</p>
+                </button>
+            </div>
+         </div>
+    </ion-content>
+</ion-view>

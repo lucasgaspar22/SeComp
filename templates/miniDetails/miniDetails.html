@@ -1,0 +1,30 @@
+<ion-view  view-title=" <img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+	<ion-nav-bar class="BlueBar" title = "Secomp" align-title="center">
+        <ion-nav-buttons side="left">
+            <button class="MenuBtn" ng-click="vm.ChangeState('app.tab.minicursos')"><ion-icon class="ion-chevron-left" style= "font-size: 30px;"> </ion-icon></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+            <div class="container-90">
+            	<div class="opacity">
+                    <br>
+                    <p class="detailsTitle">{{vm.Mini.name}}</p>
+                    <img src="{{vm.Mini.image}}" style="width: 40%;float: left; margin-left: 3%;">
+                    <!--  -->
+                    <p class="Infov"><ion-icon class="ion-ios-calendar"> {{vm.Mini.date}}</p>
+                    <p class="Infov"><ion-icon class="ion-ios-location"> {{vm.Mini.local}}</p>
+                    <p class="Infov"><ion-icon class="ion-ios-clock"> {{vm.Mini.time}}</p>
+                    <p class="Infov"><ion-icon class="ion-ios-people"> {{vm.Mini.size}}</p>
+                    <p class="Infov"><ion-icon class="ion-person"> {{vm.Mini.palestrante}}</p>
+                    <p class="Themev">{{vm.Mini.theme}}</p>
+                    <br>
+                    <p class="description" style="text-align: justify;float: left;margin-bottom: 100px;"> {{vm.Mini.description}} </p>
+                    <!-- <form class="opcity validade-form" ng-submit="vm.ValidadeMiniCurso(mini)" style="margin-bottom: 50px;">
+                        <input type="text" ng-model="mini.password" id = "passInput-{{vm.Mini.$id}}">
+                        <button class="myButton validade" id="validadeBtn-{{vm.Mini.$id}}" >Validar</button>
+                    </form> -->
+                </div>
+            </div>
+    </ion-content>
+    <div class="blueColor barDetail" style="position: fixed; bottom: 0px;height:20px;"></div>
+</ion-view>

@@ -1,0 +1,10 @@
+.opacity{ margin-top:5%;color: white; border-left:5%}
+.detailsTitle{font-size: 20px !important;padding: 2%!important; text-align: center!important;float: none!important;}
+.opacity p {position: relative; font-size: 15px; margin:2%; text-align: center; }
+.opacity .Infov{font-size: 14px!important;}
+.banner {width: 100%; height: 55%;}
+.opacity ion-icon{font-size: 20px;}
+.opacity .Themev{ text-align:center;font-size: 20px;height: 24px;float: left;color: white;background-color:#F7941E;border-radius: 5px;padding: 2px;}
+.validade-form{float:left;position: relative;margin: 2%;display: flex;}
+.validade-form input{ background-color: rgba(0,0,0,0.4)!important;  }
+.validade{ float: left; position: relative!important; margin-left: 5%; width: 30%; }

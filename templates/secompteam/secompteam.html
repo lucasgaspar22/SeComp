@@ -1,0 +1,22 @@
+<ion-view  view-title=" <img  src= 'img/logo.png' style='height: 85%; margin-top:2%;'>" align-title="center">
+
+    <ion-nav-bar class="BlueBar" title = "Team" align-title="center">
+            <ion-nav-buttons side="left">
+                
+                 <!-- <button  menu-toggle="left" class="MenuBtn"> <ion-icon class="ion-navicon-round" style= "font-size: 30px;"> </ion-icon></button> -->
+                 <button class="MenuBtn" ng-click="vm.ChangeState('app.tab.home')"><ion-icon class="ion-ios-home" style= "font-size: 30px;"> </ion-icon></button>
+            </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+            <div class="container-90">
+                <br>
+                <p class="MiniTitle" style="color: white;"> Juntos não somos um, somos uma legião. </p>
+                <div class="MyCards animated bounceInLeft" ng-repeat="team in vm.Team">
+                    <img class="MiniImg" src="{{team.photo}}">
+                    <p class="MiniTitle">{{team.name}}</p>
+                </div>
+                 <p class="MiniTitle" style="color: white;margin-bottom: 30px;"> Nós somos a SeCompTeam </p>
+            </div>
+    </ion-content>
+    <div class="blueColor barDetail" style="position: fixed; bottom: 0px;height:20px;"></div>
+</ion-view>
